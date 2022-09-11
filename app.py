@@ -49,7 +49,7 @@ def predict(data):
     df = pd.DataFrame([data],columns=cols)
     X = preprocess_data(df)
 
-    model = tf.keras.models.load_model('../nn/')
+    model = tf.keras.models.load_model('nn/')
     results = model.predict(X)
     pred_val = [x.argmax() for x in results][0]
     return pred_val
