@@ -58,7 +58,7 @@ def predict(data):
 def main():
     
     # giving a title
-    st.title('Hotel Customer check in classification app')
+    st.title('Hotel Customer check in classification app - Hosted from https://github.com/gopinath95data/hotel-checkin-classification')
     
     # getting the input data from the user
     n1 = st.selectbox('Customer Nationality',
